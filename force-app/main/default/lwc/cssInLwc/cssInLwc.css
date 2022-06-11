@@ -1,0 +1,21 @@
+p{
+    color:deeppink;
+    font: size 25px;
+    border:1px solid black;
+    background: var(--lwc-brandDark);
+}
+.ext{
+    color:aquamarine;
+    font-size:30px;
+
+}
+.ext:hover{
+    color:red;
+    font-size:50px
+}
+.wrapper{
+    width:80%;
+    background-color: cyan;
+    border:1px solid black;
+
+}

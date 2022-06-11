@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="picklist values">
+        <div class="slds-m-around_large">
+            <lightning-combobox label="Industry" options={avaliableOptions} placeholder="select industrty" value={currentValue} onchange={handleChange}>
+            </lightning-combobox>
+            <p><strong>Selected Value is </strong>:<strong>{currentValue}</strong></p>
+        <!--#############################      OPPORTUNITY STAGE PICKLIST     ##############################################################################################################################-->
+            <lightning-combobox label="Stage" options={StageOptions} placeholder="select StageName" value={currentStageVal} onchange={handlePicklistChange}>
+            </lightning-combobox>
+            <p><strong>Selected Value is </strong>:<strong>{currentStageVal}</strong></p>
+        <!--#############################   OPPORTUNITY FORECAST CATEGORY PICKLIST         ######################################################################################################-->
+            <lightning-combobox label="Forecast Category" options={ForecastCategoryOptions} placeholder="select ForecastCategory" value={currentForecastVal} onchange={handlePicklistChange}>
+            </lightning-combobox>
+            <p><strong>Selected Value is </strong>:<strong>{currentForecastVal}</strong></p>
+
+        </div>
+    </lightning-card>
+</template>

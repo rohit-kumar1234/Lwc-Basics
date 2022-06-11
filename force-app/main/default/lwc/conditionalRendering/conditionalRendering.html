@@ -1,0 +1,19 @@
+<template>
+    
+        <lightning-card title  = "Using Conditional Rendering">
+            <lightning-input  type = "number" label = "Enter first number" onkeyup={handleFirst}></lightning-input>
+            <lightning-input type = "number" label = "Enter second number" onkeyup={handleSecond}></lightning-input>
+            <lightning-button variant="base" label = "multiply" onclick ={hand}></lightning-button>
+
+            <template if:true={isClicked}>
+                <div>its working fine
+                    <p>The value of {firstValue} x {secondValue} is :{result}</p>
+                </div>
+            </template>
+            <template if:false={isClicked}>
+                <div>please click the button</div>
+            </template>
+        </lightning-card>
+       
+    
+</template>

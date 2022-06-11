@@ -1,0 +1,87 @@
+<template>
+
+    <div class = "slds-box slds-theme_shade slds-theme_alert-texture">
+
+        <lightning-accordion  allow-multiple-sections-open>
+
+            <lightning-accordion-section name="A" label="Inline Styling">
+               <lightning-card title = "Inline Styling">
+                   <div  class ="slds-m-around_large" >
+                       <p style = "border: 10px; color:chartreuse; font-size:20px; ">This is styled using Inline styling</p>
+                   </div>
+               </lightning-card>
+           </lightning-accordion-section>
+   
+   
+           <lightning-accordion-section name = "B" label="External styling">
+               <lightning-card title = "External styling">
+                   <div class = "slds-m-around_large">
+                       <p>this is example for external css</p>
+                       <div class = "ext">
+                           <p style = "border: 10px; color:chartreuse; font-size:20px; ">
+                               This is styled using external styling
+                           </p>
+                           <strong>let's rock</strong>
+                           <p>Check me once</p>
+                       </div>
+                    </div>
+               </lightning-card>
+           </lightning-accordion-section>
+   
+   
+           <lightning-accordion-section name="C" label="using SLDS">
+
+               <lightning-card title = "using SLDS">
+
+                   <lightning-accordion allow-multiple-sections-open>
+
+                       <lightning-accordion-section name ="C1" label ="badge examples">
+                        <div class = "slds-p-horizontal_medium">
+                            <div class = "slds-box">
+                                <p>This is regular-sized box</p>
+                                <span class = "slds-badge">Badge label</span>
+                                <strong class = "slds-badge slds-theme_success">Sucess Label </strong>
+                                <span class = "slds-badge slds-theme_warning">warning badge</span>
+                                <span class = "slds-badge slds-theme_error">error badge</span>
+                                <span class = "slds-badge slds-badge_inverse">inverse badge</span>
+                                <span class = "slds-badge slds-badge_lightest">lightest badge</span>
+                            </div>
+                         </div>
+                       </lightning-accordion-section>
+                   </lightning-accordion>
+                   
+                   <lightning-accordion-section name = "C2" label = "grid examples">
+                       <lightning-card title = "grid example">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col ">
+                                    <span>1</span>
+                                </div>
+                                <div class="slds-col">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                       </lightning-card>
+                   </lightning-accordion-section>
+                   
+                </lightning-card>
+           </lightning-accordion-section>
+
+           <lightning-accordion-section name ="D" label="Dynamic Css">
+               <lightning-card title = "dymanic css">
+                   <div class="slds-m-around_large" >
+                       <lightning-input type = "number" value={percentage} label="percentage"
+                          onkeyup ={handleup}></lightning-input>
+                          <div  style={displayasper}>
+                                i am good now
+                                <div>{displayasper}</div>
+                          </div>
+                   </div>
+               </lightning-card>
+           </lightning-accordion-section>
+   
+       </lightning-accordion>
+
+    </div>
+
+   
+</template>

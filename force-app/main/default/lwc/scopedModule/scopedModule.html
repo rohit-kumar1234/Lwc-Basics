@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="static resource files">
+        <img src={userImage} alt="user photo" height="100px" width="100px">
+        <img src={svgImage} alt="demo image of svg">
+        <a href={assetFile} download>download</a>
+
+        <p><strong>Current time is :{currentDate}</strong></p>
+        <div class="animate__animated animate__bounce animate__repeat-2">see what i am doing</div>
+    </lightning-card>
+
+    <lightning-card title="Fetch details">
+        <div>
+            <strong>user details</strong>
+            <p class="colorful">current logged in user id :{userId}</p>
+            <p class="colorful">is any Guest user : {isGuest}</p>
+        </div>
+    </lightning-card>
+    <lightning-button label="success button" onclick={handleClick}></lightning-button>
+</template>
